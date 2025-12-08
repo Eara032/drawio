@@ -16,8 +16,8 @@
         <mxCell id="zdWeTFXSQYcWXfj76VXR-17" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-16" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zdWeTFXSQYcWXfj76VXR-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sudah 10 Menit" vertex="1">
-          <mxGeometry height="80" width="80" x="310" y="250" as="geometry" />
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sudah jam 10, jam 16.00 ?" vertex="1">
+          <mxGeometry height="100" width="90" x="310" y="250" as="geometry" />
         </mxCell>
         <mxCell id="zdWeTFXSQYcWXfj76VXR-13" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-12" value="">
           <mxGeometry relative="1" as="geometry" />
