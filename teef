@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="Page-1" id="o9RXgTeHeDtmpBX289wR">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-8" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="Mulai" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-10" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-17" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-7" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sudah 10 Menit" vertex="1">
+          <mxGeometry height="80" width="80" x="310" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-13" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-9" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="Dapat Pesan WA" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Ya" vertex="1">
+          <mxGeometry height="30" width="60" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="80" width="80" x="710" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-21" edge="1" parent="1" source="zdWeTFXSQYcWXfj76VXR-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="zdWeTFXSQYcWXfj76VXR-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-16" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Login" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zdWeTFXSQYcWXfj76VXR-20" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Report Pekerjaan" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="560" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
