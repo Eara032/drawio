@@ -1,0 +1,188 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.2.4">
+  <diagram name="Page-1" id="Fx4Q_O2hhyc-7VZHWLJF">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="text1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="GAMBAR 3.1 FLOWMAP PROSEDUR BARANG MASUK (SISTEM BERJALAN)" vertex="1">
+          <mxGeometry height="30" width="500" x="140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="pool1" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#f5f5f5;" value="SUPPLIER" vertex="1">
+          <mxGeometry height="520" width="300" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="start1" parent="pool1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proc1" parent="pool1" style="rounded=0;whiteSpace=wrap;html=1;" value="Menyiapkan Barang&#xa;&amp; Nota" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="doc1" parent="pool1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Nota Pembelian" vertex="1">
+          <mxGeometry height="60" width="100" x="100" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="pool1" source="start1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="pool1" source="proc1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="doc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pool2" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#dae8fc;" value="BAGIAN GUDANG" vertex="1">
+          <mxGeometry height="520" width="300" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="proc2" parent="pool2" style="shape=manualInput;whiteSpace=wrap;html=1;rotation=0;size=26;boundedLbl=1;" value="Menerima Barang&#xa;&amp; Cek Kondisi" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="dec1" parent="pool2" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Sesuai?" vertex="1">
+          <mxGeometry height="80" width="80" x="110" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="proc3" parent="pool2" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Catat di Buku&#xa;Stok Masuk" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="arch1" parent="pool2" style="triangle;whiteSpace=wrap;html=1;direction=south;" value="Arsip Nota" vertex="1">
+          <mxGeometry height="40" width="40" x="220" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="end1" parent="pool2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="pool2" source="proc2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dec1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="pool2" source="dec1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc3" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="pool2" source="proc3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="end1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge8" edge="1" parent="pool2" source="proc3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="arch1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="doc1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="dec1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="proc1" value="Tidak (Retur)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="400" />
+              <mxPoint x="600" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="text2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="GAMBAR 3.2 FLOWMAP PROSEDUR BARANG KELUAR (PERMINTAAN DAPUR)" vertex="1">
+          <mxGeometry height="30" width="500" x="140" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="pool3" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#f5f5f5;" value="BAGIAN DAPUR" vertex="1">
+          <mxGeometry height="480" width="300" x="40" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="start2" parent="pool3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="proc4" parent="pool3" style="shape=manualInput;whiteSpace=wrap;html=1;size=26;boundedLbl=1;" value="Membuat Rincian&#xa;Kebutuhan" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="doc2" parent="pool3" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Catatan Permintaan" vertex="1">
+          <mxGeometry height="60" width="100" x="100" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="proc_receive" parent="pool3" style="rounded=0;whiteSpace=wrap;html=1;" value="Menerima Barang" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="end2" parent="pool3" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" edge="1" parent="pool3" source="start2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge10" edge="1" parent="pool3" source="proc4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="doc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge15" edge="1" parent="pool3" source="proc_receive" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="end2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pool4" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#dae8fc;" value="BAGIAN GUDANG" vertex="1">
+          <mxGeometry height="480" width="300" x="340" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="proc5" parent="pool4" style="rounded=0;whiteSpace=wrap;html=1;" value="Cek Stok Fisik" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="dec2" parent="pool4" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Ada?" vertex="1">
+          <mxGeometry height="80" width="80" x="110" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="proc6" parent="pool4" style="rounded=0;whiteSpace=wrap;html=1;" value="Siapkan Barang" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="proc7" parent="pool4" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Catat Buku&#xa;Stok Keluar" vertex="1">
+          <mxGeometry height="30" width="120" x="90" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="edge12" edge="1" parent="pool4" source="proc5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dec2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge13" edge="1" parent="pool4" source="dec2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc6" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge17" edge="1" parent="pool4" source="proc6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge11" edge="1" parent="1" source="doc2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge14" edge="1" parent="1" source="dec2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="proc4" value="Tidak (Lapor)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="1000" />
+              <mxPoint x="600" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge16" edge="1" parent="1" source="proc6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="proc_receive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="text3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" value="GAMBAR 3.3 FLOWMAP PROSEDUR LAPORAN STOK" vertex="1">
+          <mxGeometry height="30" width="500" x="140" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="pool5" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#dae8fc;" value="BAGIAN GUDANG" vertex="1">
+          <mxGeometry height="420" width="300" x="40" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="start3" parent="pool5" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="doc3" parent="pool5" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Buku Stok" vertex="1">
+          <mxGeometry height="50" width="100" x="100" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="proc8" parent="pool5" style="rounded=0;whiteSpace=wrap;html=1;" value="Rekapitulasi &amp;&#xa;Cek Fisik (Manual)" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="doc4" parent="pool5" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Laporan Stok" vertex="1">
+          <mxGeometry height="50" width="100" x="100" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="arch2" parent="pool5" style="triangle;whiteSpace=wrap;html=1;direction=south;" value="Arsip" vertex="1">
+          <mxGeometry height="40" width="40" x="40" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="edge18" edge="1" parent="pool5" source="start3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="doc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge19" edge="1" parent="pool5" source="doc3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge20" edge="1" parent="pool5" source="proc8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="doc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge21" edge="1" parent="pool5" source="doc4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="arch2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pool6" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;containerType=swimlane;collapsible=0;rounded=0;fillColor=#e1d5e7;" value="PEMILIK / OWNER" vertex="1">
+          <mxGeometry height="420" width="300" x="340" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="proc9" parent="pool6" style="shape=manualInput;whiteSpace=wrap;html=1;size=26;boundedLbl=1;" value="Menerima Laporan" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="end3" parent="pool6" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="100" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="edge23" edge="1" parent="pool6" source="proc9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="end3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge22" edge="1" parent="1" source="doc4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="proc9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
