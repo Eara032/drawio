@@ -1,0 +1,120 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.6">
+  <diagram name="Page-1" id="9KddeEIxCV1uUgFiohlc">
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Mulai / Buka Web" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="dec_url" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Cek Link WA?&#xa;(?uid=...)" vertex="1">
+          <mxGeometry height="80" width="140" x="350" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="dec_url">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="magic_login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Tampilan Magic Link&#xa;(Nama Terkunci)" vertex="1">
+          <mxGeometry height="60" width="140" x="540" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="normal_login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tampilan Login Biasa&#xa;(Pilih Dropdown)" vertex="1">
+          <mxGeometry height="60" width="140" x="160" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_yes" edge="1" parent="1" source="dec_url" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="magic_login" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_no" edge="1" parent="1" source="dec_url" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="normal_login" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="input_pin" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Input PIN 6 Digit" vertex="1">
+          <mxGeometry height="60" width="140" x="350" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge1" edge="1" parent="1" source="normal_login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="input_pin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_merge2" edge="1" parent="1" source="magic_login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="input_pin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="validasi" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Validasi API" vertex="1">
+          <mxGeometry height="80" width="120" x="360" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_pin_val" edge="1" parent="1" source="input_pin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="validasi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="error_alert" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Alert: PIN Salah" vertex="1">
+          <mxGeometry height="60" width="120" x="540" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_fail" edge="1" parent="1" source="validasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="error_alert" value="Gagal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_retry" edge="1" parent="1" source="error_alert" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="input_pin">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cek_role" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Cek Role User" vertex="1">
+          <mxGeometry height="80" width="120" x="360" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_valid" edge="1" parent="1" source="validasi" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="cek_role" value="Sukses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Dashboard Superadmin" vertex="1">
+          <mxGeometry height="60" width="160" x="160" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_emp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Dashboard Karyawan" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_role_admin" edge="1" parent="1" source="cek_role" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dash_admin" value="Role: ADMIN">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_role_emp" edge="1" parent="1" source="cek_role" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dash_emp" value="Role: EMPLOYEE">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_proc" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Fetch Data Statistik &amp;&#xa;Tampilkan Tabel Rekap" vertex="1">
+          <mxGeometry height="60" width="160" x="160" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_admin1" edge="1" parent="1" source="dash_admin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="admin_proc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_view" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Lihat Status:&#xa;✅ Aman / ❌ Belum" vertex="1">
+          <mxGeometry height="70" width="160" x="160" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_admin2" edge="1" parent="1" source="admin_proc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="admin_view">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="form_input" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=15;align=left;spacingLeft=10;" value="Isi Formulir Lengkap:&#xa;- Project &amp; Activity&#xa;- Jam Mulai/Selesai&#xa;- Upload File (Opsional)&#xa;- Remarks" vertex="1">
+          <mxGeometry height="100" width="200" x="500" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_emp1" edge="1" parent="1" source="dash_emp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="form_input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="save_btn" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Klik &#39;Save Data&#39;" vertex="1">
+          <mxGeometry height="40" width="120" x="540" y="920" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_emp2" edge="1" parent="1" source="form_input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="save_btn">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="db_save" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" value="Simpan ke Database" vertex="1">
+          <mxGeometry height="70" width="100" x="550" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_emp3" edge="1" parent="1" source="save_btn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="db_save">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="Logout / Selesai" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="1005" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_end_admin" edge="1" parent="1" source="admin_view" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1035" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge_end_emp" edge="1" parent="1" source="db_save" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
