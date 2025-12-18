@@ -2,8 +2,92 @@
   <diagram name="Page-1" id="vr7dUKRKbqpJ5VXBysV2">
     <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
-        <mxCell id="4cmp7_LgGa1AUB6NZVyH-0" />
-        <mxCell id="4cmp7_LgGa1AUB6NZVyH-1" parent="4cmp7_LgGa1AUB6NZVyH-0" />
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sched" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="Mulai Otomatis&#xa;(Scheduler 15:45 WIB)" vertex="1">
+          <mxGeometry height="70" width="140" x="354" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cek_db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="System Cek:&#xa;Siapa belum lapor?" vertex="1">
+          <mxGeometry height="50" width="120" x="364" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wa" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Kirim Notifikasi WA&#xa;(+ Direct Access Link)" vertex="1">
+          <mxGeometry height="60" width="160" x="344" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="hp" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Karyawan Klik&#xa;Link Personal" vertex="1">
+          <mxGeometry height="60" width="160" x="344" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Input PIN &amp;&#xa;Isi Laporan Kerja" vertex="1">
+          <mxGeometry height="60" width="120" x="364" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f5f5f5;" value="Simpan ke Database" vertex="1">
+          <mxGeometry height="60" width="100" x="374" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1" value="Dashboard Admin&#xa;Update Realtime (✅)" vertex="1">
+          <mxGeometry height="60" width="160" x="344" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="364" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="sched" target="cek_db">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="cek_db" target="wa">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="wa" target="hp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="hp" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="input" target="save">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="save" target="admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="admin" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#B85450;fontStyle=1" value="SERVER SYSTEM" vertex="1">
+          <mxGeometry height="30" width="120" x="520" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#6C8EBF;fontStyle=1" value="USER ACTION" vertex="1">
+          <mxGeometry height="30" width="120" x="520" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl3" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#9673A6;fontStyle=1" value="MONITORING" vertex="1">
+          <mxGeometry height="30" width="120" x="520" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="br1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=#B85450;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="290" />
+              <mxPoint x="510" y="60" />
+            </Array>
+            <mxPoint x="500" y="290" as="sourcePoint" />
+            <mxPoint x="500" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="br2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=#6C8EBF;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="590" />
+              <mxPoint x="510" y="360" />
+            </Array>
+            <mxPoint x="500" y="590" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="br3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;strokeColor=#9673A6;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="510" y="710" />
+              <mxPoint x="510" y="670" />
+            </Array>
+            <mxPoint x="500" y="710" as="sourcePoint" />
+            <mxPoint x="500" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
