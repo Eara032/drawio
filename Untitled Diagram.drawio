@@ -1,0 +1,205 @@
+<mxfile host="app.diagrams.net" pages="3">
+  <diagram id="iZ6pTFcE4p1lL57eAoD9" name="Flow BM">
+    <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;" value="1. Flowchart Barang Masuk" vertex="1">
+          <mxGeometry height="850" width="700" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane1" parent="pool1" style="swimlane;whiteSpace=wrap;html=1;" value="SUPPLIER" vertex="1">
+          <mxGeometry height="820" width="210" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n1" parent="lane1" style="ellipse;whiteSpace=wrap;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="70" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="n2" parent="lane1" style="rounded=0;whiteSpace=wrap;html=1;" value="Siapkan Barang &amp; Nota Pembelian" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lane2" parent="pool1" style="swimlane;whiteSpace=wrap;html=1;" value="ADMIN GUDANG" vertex="1">
+          <mxGeometry height="820" width="280" x="210" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;" value="Menerima Barang" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;" value="Buka Menu Masuk" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="lane2" style="rhombus;whiteSpace=wrap;html=1;" value="Pilih Jenis Input?" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="n6a" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;" value="Input Data &amp; Foto Nota Bukti" vertex="1">
+          <mxGeometry height="60" width="110" x="150" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n6b" parent="lane2" style="rounded=0;whiteSpace=wrap;html=1;" value="Scan QR / Input Biasa" vertex="1">
+          <mxGeometry height="60" width="110" x="15" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="lane2" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="114" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="lane3" parent="pool1" style="swimlane;whiteSpace=wrap;html=1;" value="SISTEM (WEB &amp; DB)" vertex="1">
+          <mxGeometry height="820" width="210" x="490" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="lane3" style="rounded=0;whiteSpace=wrap;html=1;" value="Encode Base64" vertex="1">
+          <mxGeometry height="60" width="120" x="45" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="lane3" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Update Stok MySQL" vertex="1">
+          <mxGeometry height="60" width="140" x="35" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="pool1" source="n1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="pool1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="pool1" source="n3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="pool1" source="n4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5a" edge="1" parent="pool1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n6a" value="Pemesanan">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5a_sys" edge="1" parent="pool1" source="n6a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5a_upd" edge="1" parent="pool1" source="n7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5b" edge="1" parent="pool1" source="n5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="n6b" value="QR / Manual">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j7aCnHVIJN1ClHDpvOju-2" edge="1" parent="pool1" source="n6b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="n8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="598" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="j7aCnHVIJN1ClHDpvOju-3" edge="1" parent="pool1" source="n8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="n10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wYvV1EC6UT_gwEkn4C_u" name="Flow BK">
+    <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool2" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;" value="2. Flowchart Barang Keluar" vertex="1">
+          <mxGeometry height="600" width="660" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane4" parent="pool2" style="swimlane;whiteSpace=wrap;html=1;" value="BAGIAN DAPUR" vertex="1">
+          <mxGeometry height="570" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k1" parent="lane4" style="ellipse;whiteSpace=wrap;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="60" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2" parent="lane4" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Buat Catatan Permintaan" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="k7" parent="lane4" style="rounded=0;whiteSpace=wrap;html=1;" value="Menerima Barang" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="k8" parent="lane4" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="60" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="lane5" parent="pool2" style="swimlane;whiteSpace=wrap;html=1;" value="ADMIN GUDANG" vertex="1">
+          <mxGeometry height="570" width="220" x="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k3" parent="lane5" style="rounded=0;whiteSpace=wrap;html=1;" value="Buka Menu Scan Keluar" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="k4" parent="lane5" style="rounded=0;whiteSpace=wrap;html=1;" value="Scan QR Rak &amp; Input Jumlah" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="k6" parent="lane5" style="rounded=0;whiteSpace=wrap;html=1;" value="Serahkan Barang ke Dapur" vertex="1">
+          <mxGeometry height="60" width="120" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lane6" parent="pool2" style="swimlane;whiteSpace=wrap;html=1;" value="SISTEM (WEB &amp; DB)" vertex="1">
+          <mxGeometry height="570" width="220" x="440" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k5" parent="lane6" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Potong Stok MySQL" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ek1" edge="1" parent="pool2" source="k1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek2" edge="1" parent="pool2" source="k2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek3" edge="1" parent="pool2" source="k3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek4" edge="1" parent="pool2" source="k4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek5" edge="1" parent="pool2" source="k5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek6" edge="1" parent="pool2" source="k6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ek7" edge="1" parent="pool2" source="k7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="k8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="tnAT0XnhTYpGQaAqmQLh" name="FLOW LS">
+    <mxGraphModel dx="1032" dy="601" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pool3" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fontStyle=1;" value="3. Flowchart Laporan Stok" vertex="1">
+          <mxGeometry height="500" width="460" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lane7" parent="pool3" style="swimlane;whiteSpace=wrap;html=1;" value="PEMILIK (OWNER)" vertex="1">
+          <mxGeometry height="470" width="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" parent="lane7" style="ellipse;whiteSpace=wrap;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="40" width="100" x="65" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" parent="lane7" style="rounded=0;whiteSpace=wrap;html=1;" value="Buka Dasbor &amp; Klik Export Laporan" vertex="1">
+          <mxGeometry height="60" width="120" x="55" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" parent="lane7" style="rounded=0;whiteSpace=wrap;html=1;" value="Unduh File Laporan" vertex="1">
+          <mxGeometry height="60" width="120" x="55" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" parent="lane7" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="40" width="100" x="65" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lane8" parent="pool3" style="swimlane;whiteSpace=wrap;html=1;" value="SISTEM (WEB &amp; DB)" vertex="1">
+          <mxGeometry height="470" width="230" x="230" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" parent="lane8" style="rounded=0;whiteSpace=wrap;html=1;" value="Tarik Data DB &amp; Generate Laporan" vertex="1">
+          <mxGeometry height="60" width="120" x="55" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" parent="lane8" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Laporan Excel (.xlsx)" vertex="1">
+          <mxGeometry height="60" width="120" x="55" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="el1" edge="1" parent="pool3" source="l1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el2" edge="1" parent="pool3" source="l2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el3" edge="1" parent="pool3" source="l3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el4" edge="1" parent="pool3" source="l4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="el5" edge="1" parent="pool3" source="l5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="l6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
