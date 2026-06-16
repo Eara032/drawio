@@ -521,7 +521,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Copy of Masuk" id="TPkikvbzB1aWpIh2OWxG">
+  <diagram name="Keluarrr" id="TPkikvbzB1aWpIh2OWxG">
     <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="CYFDLp1rqKjnk5PjOrRL-0" />
@@ -532,7 +532,7 @@
         <mxCell id="CYFDLp1rqKjnk5PjOrRL-3" parent="CYFDLp1rqKjnk5PjOrRL-2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
           <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="CYFDLp1rqKjnk5PjOrRL-4" parent="CYFDLp1rqKjnk5PjOrRL-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Keluar" vertex="1">
+        <mxCell id="CYFDLp1rqKjnk5PjOrRL-4" parent="CYFDLp1rqKjnk5PjOrRL-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Barang Keluar" vertex="1">
           <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
         </mxCell>
         <mxCell id="CYFDLp1rqKjnk5PjOrRL-5" edge="1" parent="CYFDLp1rqKjnk5PjOrRL-2" source="CYFDLp1rqKjnk5PjOrRL-3" style="endArrow=classic;html=1;rounded=0;" target="CYFDLp1rqKjnk5PjOrRL-4" value="">
