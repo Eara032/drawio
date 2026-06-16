@@ -425,10 +425,10 @@
         <mxCell id="TQQJuz3tJXNryNFU3rJi-1" parent="1" style="swimlane;startSize=0;" value="" vertex="1">
           <mxGeometry height="200" width="500" x="160" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="TQQJuz3tJXNryNFU3rJi-2" parent="TQQJuz3tJXNryNFU3rJi-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+        <mxCell id="TQQJuz3tJXNryNFU3rJi-2" parent="TQQJuz3tJXNryNFU3rJi-1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
           <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="TQQJuz3tJXNryNFU3rJi-4" parent="TQQJuz3tJXNryNFU3rJi-1" style="ellipse;whiteSpace=wrap;html=1;" value="Halaman Publik" vertex="1">
+        <mxCell id="TQQJuz3tJXNryNFU3rJi-4" parent="TQQJuz3tJXNryNFU3rJi-1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Halaman Publik" vertex="1">
           <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
         </mxCell>
         <mxCell id="TQQJuz3tJXNryNFU3rJi-3" edge="1" parent="TQQJuz3tJXNryNFU3rJi-1" source="TQQJuz3tJXNryNFU3rJi-2" style="endArrow=classic;html=1;rounded=0;" target="TQQJuz3tJXNryNFU3rJi-4" value="">
