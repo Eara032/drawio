@@ -814,7 +814,7 @@
           <mxGeometry height="50" width="140" x="70" y="190" as="geometry" />
         </mxCell>
         <mxCell id="s2" parent="lane2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;" value="Validasi DB (Bcrypt Compare)&#xa;&amp;amp; Cek Tingkat Role" vertex="1">
-          <mxGeometry height="60" width="160" x="-20" y="400" as="geometry" />
+          <mxGeometry height="60" width="160" x="14" y="410" as="geometry" />
         </mxCell>
         <mxCell id="L2SFVkFvpdV95t1c1bgq-1" edge="1" parent="lane2" source="dec1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="s3">
           <mxGeometry relative="1" as="geometry">
