@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="9">
+<mxfile host="app.diagrams.net" pages="12">
   <diagram id="iZ6pTFcE4p1lL57eAoD9" name="Flow BM">
     <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -542,6 +542,84 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CYFDLp1rqKjnk5PjOrRL-6" parent="CYFDLp1rqKjnk5PjOrRL-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistem CV Laksana" vertex="1">
+          <mxGeometry height="20" width="500" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Pesan" id="gA2gOkMXdNHK5KMpB0cZ">
+    <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="BLl-Y8wWMkocRIpLF388-0" />
+        <mxCell id="BLl-Y8wWMkocRIpLF388-1" parent="BLl-Y8wWMkocRIpLF388-0" />
+        <mxCell id="BLl-Y8wWMkocRIpLF388-2" parent="BLl-Y8wWMkocRIpLF388-1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="200" width="500" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BLl-Y8wWMkocRIpLF388-3" parent="BLl-Y8wWMkocRIpLF388-2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
+          <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BLl-Y8wWMkocRIpLF388-4" parent="BLl-Y8wWMkocRIpLF388-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Pemesanan" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="BLl-Y8wWMkocRIpLF388-5" edge="1" parent="BLl-Y8wWMkocRIpLF388-2" source="BLl-Y8wWMkocRIpLF388-3" style="endArrow=classic;html=1;rounded=0;" target="BLl-Y8wWMkocRIpLF388-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BLl-Y8wWMkocRIpLF388-6" parent="BLl-Y8wWMkocRIpLF388-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistem CV Laksana" vertex="1">
+          <mxGeometry height="20" width="500" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of Pesan" id="zdydrGyVriOllvLvhfzQ">
+    <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-0" />
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-1" parent="KoFFAX8NiBrzGtSFIgmV-0" />
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-2" parent="KoFFAX8NiBrzGtSFIgmV-1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="200" width="500" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-3" parent="KoFFAX8NiBrzGtSFIgmV-2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
+          <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-4" parent="KoFFAX8NiBrzGtSFIgmV-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Status Pemesanan" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-5" edge="1" parent="KoFFAX8NiBrzGtSFIgmV-2" source="KoFFAX8NiBrzGtSFIgmV-3" style="endArrow=classic;html=1;rounded=0;" target="KoFFAX8NiBrzGtSFIgmV-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KoFFAX8NiBrzGtSFIgmV-6" parent="KoFFAX8NiBrzGtSFIgmV-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistem CV Laksana" vertex="1">
+          <mxGeometry height="20" width="500" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Copy of Copy of Pesan" id="WiKdjCcJXyO0DXHKIvvq">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-0" />
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-1" parent="wFrCkxutcBiEe_Tw3bRx-0" />
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-2" parent="wFrCkxutcBiEe_Tw3bRx-1" style="swimlane;startSize=0;" value="" vertex="1">
+          <mxGeometry height="200" width="500" x="160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-3" parent="wFrCkxutcBiEe_Tw3bRx-2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
+          <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-4" parent="wFrCkxutcBiEe_Tw3bRx-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Pemesanan" vertex="1">
+          <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-5" edge="1" parent="wFrCkxutcBiEe_Tw3bRx-2" source="wFrCkxutcBiEe_Tw3bRx-3" style="endArrow=classic;html=1;rounded=0;" target="wFrCkxutcBiEe_Tw3bRx-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-6" parent="wFrCkxutcBiEe_Tw3bRx-2" style="rounded=0;whiteSpace=wrap;html=1;" value="Sistem CV Laksana" vertex="1">
           <mxGeometry height="20" width="500" as="geometry" />
         </mxCell>
       </root>
