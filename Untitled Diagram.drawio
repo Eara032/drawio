@@ -610,7 +610,7 @@
         <mxCell id="wFrCkxutcBiEe_Tw3bRx-3" parent="wFrCkxutcBiEe_Tw3bRx-2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" value="Actor" vertex="1">
           <mxGeometry height="130" width="65" x="50" y="30" as="geometry" />
         </mxCell>
-        <mxCell id="wFrCkxutcBiEe_Tw3bRx-4" parent="wFrCkxutcBiEe_Tw3bRx-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="stok opname&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="wFrCkxutcBiEe_Tw3bRx-4" parent="wFrCkxutcBiEe_Tw3bRx-2" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="stok opname" vertex="1">
           <mxGeometry height="80" width="160" x="320" y="55" as="geometry" />
         </mxCell>
         <mxCell id="wFrCkxutcBiEe_Tw3bRx-5" edge="1" parent="wFrCkxutcBiEe_Tw3bRx-2" source="wFrCkxutcBiEe_Tw3bRx-3" style="endArrow=classic;html=1;rounded=0;" target="wFrCkxutcBiEe_Tw3bRx-4" value="">
