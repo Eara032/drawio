@@ -1848,7 +1848,7 @@
           <mxGeometry height="90" width="260" y="30" as="geometry" />
         </mxCell>
         <mxCell id="cls_rencana_belanja" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="rencana_belanjas" vertex="1">
-          <mxGeometry height="190" width="260" x="890" y="200" as="geometry" />
+          <mxGeometry height="190" width="260" x="910" y="80" as="geometry" />
         </mxCell>
         <mxCell id="att_rencana_belanja" parent="cls_rencana_belanja" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar (FK)&#xa;+ idUser: varchar (FK)&#xa;+ jumlahRequest: double&#xa;+ keterangan: text&#xa;+ status: mysqlEnum&#xa;+ tanggalDibutuhkan: datetime&#xa;+ buktiFoto: longtext (Base64)" vertex="1">
           <mxGeometry height="160" width="260" y="30" as="geometry" />
@@ -1875,7 +1875,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e_u_r" edge="1" parent="1" source="cls_user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_rencana_belanja" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="130" />
+              <mxPoint x="870" y="130" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="e_u_sm" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
           <mxGeometry relative="1" x="0.0489" y="70" as="geometry">
@@ -1917,7 +1922,11 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="e_b_r" edge="1" parent="1" source="cls_barang" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_rencana_belanja" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1020" y="360" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="e_sm_sb" edge="1" parent="1" source="att_stock_masuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;exitX=1.01;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
           <mxGeometry relative="1" as="geometry" />
