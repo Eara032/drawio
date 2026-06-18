@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="30">
+<mxfile host="app.diagrams.net" pages="31">
   <diagram id="iZ6pTFcE4p1lL57eAoD9" name="Flow BM">
     <mxGraphModel dx="774" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1790,6 +1790,153 @@
         </mxCell>
         <mxCell id="edge11" edge="1" parent="pool" source="a4" style="endArrow=classic;html=1;strokeColor=#000000;strokeWidth=1.5;rounded=0;" target="end">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lfk1eI7XtX81kQZ1jVJ-" name="Page-31">
+    <mxGraphModel dx="1191" dy="694" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_pwd_reset" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="password_resets" vertex="1">
+          <mxGeometry height="120" width="260" x="50" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="att_pwd_reset" parent="cls_pwd_reset" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ email: varchar&#xa;+ token: varchar (Unique)&#xa;+ expiredAt: timestamp&#xa;+ createdAt: timestamp" vertex="1">
+          <mxGeometry height="90" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_category" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="categories" vertex="1">
+          <mxGeometry height="120" width="260" x="50" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="att_category" parent="cls_category" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ nama: varchar (Unique)&#xa;+ deskripsi: text&#xa;+ createdAt: timestamp" vertex="1">
+          <mxGeometry height="90" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_satuan" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="satuans" vertex="1">
+          <mxGeometry height="100" width="260" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="att_satuan" parent="cls_satuan" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ nama: varchar (Unique)&#xa;+ createdAt: timestamp" vertex="1">
+          <mxGeometry height="70" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_stock_masuk" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="stock_masuks" vertex="1">
+          <mxGeometry height="170" width="260" x="50" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stock_masuk" parent="cls_stock_masuk" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ idStock: varchar (FK)&#xa;+ idUser: varchar (FK)&#xa;+ jumlah: int&#xa;+ harga: double&#xa;+ tanggalMasuk: timestamp&#xa;+ status: mysqlEnum" vertex="1">
+          <mxGeometry height="140" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_peminjaman" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="peminjaman_opnames" vertex="1">
+          <mxGeometry height="180" width="260" x="60" y="775" as="geometry" />
+        </mxCell>
+        <mxCell id="att_peminjaman" parent="cls_peminjaman" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar&#xa;+ namaPeminjam: varchar&#xa;+ jumlah: int&#xa;+ waktuPinjam: timestamp&#xa;+ tenggatWaktu: datetime&#xa;+ waktuKembali: datetime&#xa;+ status: varchar" vertex="1">
+          <mxGeometry height="150" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_user" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="users (Autentikasi)" vertex="1">
+          <mxGeometry height="230" width="260" x="460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="att_user" parent="cls_user" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ name: varchar&#xa;+ username: varchar (Unique)&#xa;+ email: varchar&#xa;+ password: varchar&#xa;+ role: mysqlEnum&#xa;+ qrToken: varchar (Unique)&#xa;+ securityQuestion: varchar&#xa;+ securityAnswer: varchar&#xa;+ pin: varchar" vertex="1">
+          <mxGeometry height="200" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_barang" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="barangs (Data Master)" vertex="1">
+          <mxGeometry height="160" width="260" x="460" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="att_barang" parent="cls_barang" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ kodeBarang: varchar (PK)&#xa;+ idCategory: varchar (FK)&#xa;+ idSatuan: varchar (FK)&#xa;+ nama: varchar&#xa;+ deskripsi: text&#xa;+ deletedAt: datetime" vertex="1">
+          <mxGeometry height="130" width="260" x="10" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_stock_barang" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="stock_barangs (Stok Real)" vertex="1">
+          <mxGeometry height="120" width="260" x="510" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stock_barang" parent="cls_stock_barang" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar (FK)&#xa;+ jumlahStock: int&#xa;+ createdAt: timestamp" vertex="1">
+          <mxGeometry height="90" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_rencana_belanja" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="rencana_belanjas" vertex="1">
+          <mxGeometry height="190" width="260" x="890" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="att_rencana_belanja" parent="cls_rencana_belanja" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar (FK)&#xa;+ idUser: varchar (FK)&#xa;+ jumlahRequest: double&#xa;+ keterangan: text&#xa;+ status: mysqlEnum&#xa;+ tanggalDibutuhkan: datetime&#xa;+ buktiFoto: longtext (Base64)" vertex="1">
+          <mxGeometry height="160" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_stock_keluar" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="stock_keluars" vertex="1">
+          <mxGeometry height="160" width="260" x="920" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stock_keluar" parent="cls_stock_keluar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ idStock: varchar (FK)&#xa;+ idUser: varchar (FK)&#xa;+ jumlah: int&#xa;+ status: mysqlEnum&#xa;+ tanggalKeluar: timestamp" vertex="1">
+          <mxGeometry height="130" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_stok_opname" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="stok_opnames" vertex="1">
+          <mxGeometry height="140" width="260" x="920" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="att_stok_opname" parent="cls_stok_opname" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar (Unique)&#xa;+ jumlahStock: int&#xa;+ lastUpdated: timestamp" vertex="1">
+          <mxGeometry height="110" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_riwayat" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=30;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=13;" value="riwayat_pemindahans" vertex="1">
+          <mxGeometry height="150" width="260" x="920" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="att_riwayat" parent="cls_riwayat" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=8;spacingRight=8;overflow=hidden;fontSize=12;" value="+ id: varchar (PK)&#xa;+ kodeBarang: varchar&#xa;+ jumlah: int&#xa;+ tipe: varchar&#xa;+ idUser: varchar&#xa;+ keterangan: text&#xa;+ tanggal: timestamp" vertex="1">
+          <mxGeometry height="120" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_p" edge="1" parent="1" source="cls_user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_pwd_reset" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has one&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 0..1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_r" edge="1" parent="1" source="cls_user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_rencana_belanja" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_u_sm" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" x="0.0489" y="70" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="410" y="200" />
+              <mxPoint x="410" y="660" />
+            </Array>
+            <mxPoint x="450" y="199.996923076923" as="sourcePoint" />
+            <mxPoint x="300" y="659.996923076923" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_u_sk" edge="1" parent="1" source="cls_user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;jumpStyle=line;" target="cls_stock_keluar" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" x="0.802" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="750" y="165" />
+              <mxPoint x="750" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_c_b" edge="1" parent="1" source="cls_category" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_barang" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" x="-1" y="-30" as="geometry">
+            <mxPoint x="-30" y="-30" as="offset" />
+            <Array as="points">
+              <mxPoint x="385" y="280" />
+              <mxPoint x="385" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_s_b" edge="1" parent="1" source="cls_satuan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_barang" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" x="-1" y="-10" as="geometry">
+            <mxPoint x="-10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_b_sb" edge="1" parent="1" source="cls_barang" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has one&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_b_r" edge="1" parent="1" source="cls_barang" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_rencana_belanja" value="1 &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;has many&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; *">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sm_sb" edge="1" parent="1" source="att_stock_masuk" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;exitX=1.01;exitY=0.836;exitDx=0;exitDy=0;exitPerimeter=0;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_sk_sb" edge="1" parent="1" source="cls_stock_keluar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_so_sb" edge="1" parent="1" source="cls_stok_opname" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_p_sb" edge="1" parent="1" source="cls_peminjaman" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" x="-0.6045" as="geometry">
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_r_sb" edge="1" parent="1" source="cls_riwayat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
+          <mxGeometry relative="1" x="-0.6129" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
