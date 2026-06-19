@@ -1943,8 +1943,8 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="e_r_sb" edge="1" parent="1" source="cls_riwayat" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#333333;strokeWidth=2;labelBackgroundColor=#FFFFFF;fontSize=12;" target="cls_stock_barang" value="* &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;b&amp;gt;belongs to&amp;lt;/b&amp;gt; &amp;nbsp;&amp;nbsp;&amp;nbsp; 1">
-          <mxGeometry relative="1" x="-0.6129" as="geometry">
-            <mxPoint x="1" as="offset" />
+          <mxGeometry relative="1" x="-0.412" y="35" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
